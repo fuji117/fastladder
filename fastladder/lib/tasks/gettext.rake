@@ -8,6 +8,6 @@ namespace :gettext do
   desc 'Create mo files.'
   task :make_mo do
     require 'gettext/utils'
-    GetText.make_mofiles(true, 'po', 'locale')
+    GetText.create_mofiles(true, 'po', 'locale')
   end
 end
