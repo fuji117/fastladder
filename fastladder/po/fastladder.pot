@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fastladder 0.0.2\n"
-"POT-Creation-Date: 2008-02-15 01:20+0900\n"
+"POT-Creation-Date: 2008-02-23 13:43+0900\n"
 "PO-Revision-Date: 2008-02-15 00:06+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,6 +316,75 @@ msgstr ""
 msgid "Subscription|Updated on"
 msgstr ""
 
+#: app/views/contents/config.rhtml:8
+msgid "General"
+msgstr ""
+
+#: app/views/contents/config.rhtml:9
+msgid "Display"
+msgstr ""
+
+#: app/views/contents/config.rhtml:10
+msgid "Pin"
+msgstr ""
+
+#: app/views/contents/config.rhtml:11
+msgid "Share"
+msgstr ""
+
+#: app/views/contents/config.rhtml:12
+msgid "Detail"
+msgstr ""
+
+#: app/views/contents/config.rhtml:18
+msgid "Subscribe to feed"
+msgstr ""
+
+#: app/views/contents/config.rhtml:19
+msgid "Click 'Add' icon and enter the feed URL."
+msgstr ""
+
+#: app/views/contents/config.rhtml:22
+msgid "Manage subscription list"
+msgstr ""
+
+#: app/views/contents/config.rhtml:23
+msgid "Click 'Edit' icon to manage 'My Feeds'."
+msgstr ""
+
+#: app/views/contents/config.rhtml:26
+msgid "Browser buttons"
+msgstr ""
+
+#: app/views/contents/config.rhtml:27
+msgid ""
+"Add new feeds to your subscription list with an easy-access browser button."
+msgstr ""
+
+#: app/views/contents/config.rhtml:34
+msgid "Font size"
+msgstr ""
+
+#: app/views/contents/config.rhtml:38
+msgid "Sort order"
+msgstr ""
+
+#: app/views/contents/config.rhtml:40
+msgid "New articles first"
+msgstr ""
+
+#: app/views/contents/config.rhtml:41
+msgid "Old articles first"
+msgstr ""
+
+#: app/views/contents/config.rhtml:45
+msgid "Number of 'My Feeds' to show"
+msgstr ""
+
+#: app/views/contents/config.rhtml:47
+msgid "For shorter loading time, set the limit smaller. "
+msgstr ""
+
 #: app/views/members/new.rhtml:1 app/views/members/new.rhtml:4
 #: app/views/sessions/new.rhtml:16
 msgid "Create new account"
@@ -357,6 +426,18 @@ msgstr ""
 msgid "Sign Out"
 msgstr ""
 
+#: app/views/reader/index.rhtml:275
+msgid "Shortcut Keys"
+msgstr ""
+
+#: app/views/reader/index.rhtml:280
+msgid "Others"
+msgstr ""
+
+#: app/views/reader/index.rhtml:297
+msgid "To use Fastladder, enable JavaScript by changing your browser options."
+msgstr ""
+
 #: app/views/reader/index.rhtml:309
 msgid "Reload"
 msgstr ""
@@ -367,6 +448,26 @@ msgstr ""
 
 #: app/views/reader/index.rhtml:313
 msgid "Add"
+msgstr ""
+
+#: app/views/reader/index.rhtml:376
+msgid "add feed"
+msgstr ""
+
+#: app/views/reader/index.rhtml:377
+msgid "import feed"
+msgstr ""
+
+#: app/views/reader/index.rhtml:383
+msgid "next"
+msgstr ""
+
+#: app/views/reader/index.rhtml:392
+msgid "file"
+msgstr ""
+
+#: app/views/reader/index.rhtml:397
+msgid "Import from URL"
 msgstr ""
 
 #: app/views/sessions/new.rhtml:1

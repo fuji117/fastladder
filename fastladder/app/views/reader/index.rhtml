@@ -272,12 +272,12 @@ table.compact input, table.compact textarea{
 			 onmouseout="Control.pin_mouseout.call(this,event);"
 			 onclick="Control.pin_click.call(this,event);"
 			 style="background-image:url('/img/icon/pin.gif')" >&nbsp;<span id="pin_count"></span></li>
-			<li class="button icon" id="keyhelp_button" onclick="Control.toggle_keyhelp()" style="background-image:url('/img/icon/key_q.gif');width:auto;padding-left:26px;">&nbsp;Shortcut Keys<kbd>?</kbd></li>
+			 <li class="button icon" id="keyhelp_button" onclick="Control.toggle_keyhelp()" style="background-image:url('/img/icon/key_q.gif');width:auto;padding-left:26px;">&nbsp;<%= _('Shortcut Keys') %><kbd>?</kbd></li>
 			<li class="button icon" id="menu_button"
 			 style="text-align:right;width:auto;"
 			 onselectstart="return false"
 			 onmousedown="Control.toggle_menu.call(this,event);"
-			 ><span style="white-space:nowrap;">Others<span class="tri_icon">&nbsp;&nbsp;</span></span>
+			 ><span style="white-space:nowrap;"><%= _('Others') %><span class="tri_icon">&nbsp;&nbsp;</span></span>
 			</li>
 		</ul>
 	</div>
@@ -294,7 +294,7 @@ table.compact input, table.compact textarea{
 <noscript>
 	<!-- This is best practice of centering -->
 	<center style="padding-top:1em">
-	To use Fastladder, enable JavaScript by changing your browser options.
+		<%= _('To use Fastladder, enable JavaScript by changing your browser options.') %>
 	</center>
 </noscript>
 
@@ -373,27 +373,29 @@ table.compact input, table.compact textarea{
 </div>
 <div id="subscribe_window">
 	<div class="tabs">
-		<div class="tab tab-active" id="tab_add_feed" rel="tab:subscribe_window>add_feed">add feed</div>
-		<div class="tab tab-inactive" rel="tab:subscribe_window>import_feed">import feed</div>
+		<div class="tab tab-active" id="tab_add_feed" rel="tab:subscribe_window>add_feed"><%= _('add feed') %></div>
+		<div class="tab tab-inactive" rel="tab:subscribe_window>import_feed"><%= _('import feed') %></div>
 	</div>
 	<div class="body">
 		<div id="add_feed">
-			<form id="discover_form" action="/api/feed/discover" method="post">
-				<b>Feed URL</b> : <input type="text" name="url" style="width:280px" id="discover_url" value="http://">
-				<input type="submit" value="next" style="width:90px">
-			</form>
+			<% form_tag '/api/feed/discover', :id => 'discover_form' do %>
+			<b>Feed URL</b> : <input type="text" name="url" style="width:280px" id="discover_url" value="http://">
+			<%= submit_tag _('next'), :style => 'width:90px' %>
+			<% end %>
 			<div id="discover_items"></div>
 			<div style="float:left" class="discover_help">
 				<a href="/subscribe/"><img src="/img/icon/new_window.gif" border="none"></a>
 			</div>
 		</div>
 		<div id="import_feed" style="display:none">
-			<form target="_blank" action="/import/index" method="post" enctype="multipart/form-data">
-				<b>file</b> : <input type="file" name="opml" style="width:230px"> <input type="submit" value=" Upload " style="width:90px">
-			</form>
-			<form target="_blank" action="/import/fetch" method="post" enctype="multipart/form-data">
-				<b>OPML URL</b> : <input type="text" name="opml_url" value="http://" style="width:280px"> <input type="submit" value=" Import from URL " style="width:90px">
-			</form>
+			<% form_tag '/import/index', :multipart => true, :target => '_blank' do %>
+			<b><%= _('file') %></b> : <input type="file" name="opml" style="width:230px">
+			<input type="submit" value=" Upload " style="width:90px">
+			<% end %>
+			<% form_tag '/import/fetch', :multipart => true, :target => '_blank' do %>
+			<b>OPML URL</b> : <input type="text" name="opml_url" value="http://" style="width:280px">
+			<%= submit_tag _('Import from URL'), :style => 'width:90px' %>
+			<% end %>
 			<div style="float:left" class="discover_help">
 				<a href="/import/"><img src="/img/icon/new_window.gif" border="none"></a>
 			</div>

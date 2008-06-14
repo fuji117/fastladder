@@ -210,6 +210,7 @@ module Crawler
     feed.image = nil
     if favicon = fetch_favicon(feed)
       Favicon.find_or_create_by_feed_id(feed.id).update_attribute(:image, favicon)
+      GC.start
     end
     result
   end

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fastladder 0.0.2\n"
-"POT-Creation-Date: 2008-02-15 01:20+0900\n"
+"POT-Creation-Date: 2008-02-23 13:43+0900\n"
 "PO-Revision-Date: 2008-02-15 00:06+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,6 +316,74 @@ msgstr ""
 msgid "Subscription|Updated on"
 msgstr ""
 
+#: app/views/contents/config.rhtml:8
+msgid "General"
+msgstr "基本設定"
+
+#: app/views/contents/config.rhtml:9
+msgid "Display"
+msgstr "表示設定"
+
+#: app/views/contents/config.rhtml:10
+msgid "Pin"
+msgstr "ピンの設定"
+
+#: app/views/contents/config.rhtml:11
+msgid "Share"
+msgstr "共有設定"
+
+#: app/views/contents/config.rhtml:12
+msgid "Detail"
+msgstr "詳細設定"
+
+#: app/views/contents/config.rhtml:18
+msgid "Subscribe to feed"
+msgstr "RSSフィードの登録"
+
+#: app/views/contents/config.rhtml:19
+msgid "Click 'Add' icon and enter the feed URL."
+msgstr "「追加」アイコンをクリック。URLを入力してRSSフィードを選んでください。"
+
+#: app/views/contents/config.rhtml:22
+msgid "Manage subscription list"
+msgstr "フォルダとアイテムの編集"
+
+#: app/views/contents/config.rhtml:23
+msgid "Click 'Edit' icon to manage 'My Feeds'."
+msgstr "「編集」アイコンをクリック。マイフィードの詳細情報が一覧で表示されます。"
+
+#: app/views/contents/config.rhtml:26
+msgid "Browser buttons"
+msgstr "ブラウザ用登録ボタン(Bookmarklet)"
+
+#: app/views/contents/config.rhtml:27
+msgid "Add new feeds to your subscription list with an easy-access browser button."
+msgstr "ブラウザに組み込んで使用。RSSフィードを一発登録できます。"
+
+#: app/views/contents/config.rhtml:34
+msgid "Font size"
+msgstr "本文の文字サイズ"
+
+#: app/views/contents/config.rhtml:38
+msgid "Sort order"
+msgstr "記事の表示順"
+
+#: app/views/contents/config.rhtml:40
+msgid "New articles first"
+msgstr "新着順"
+
+#: app/views/contents/config.rhtml:41
+msgid "Old articles first"
+msgstr "旧着順（古い記事が上に表示されます）"
+
+#: app/views/contents/config.rhtml:45
+msgid "Number of 'My Feeds' to show"
+msgstr "マイフィードの表示件数"
+
+#: app/views/contents/config.rhtml:47
+msgid "For shorter loading time, set the limit smaller. "
+msgstr "表示件数を制限することでマイフィードの表示にかかる時間を短かくすることができます。"
+
 #: app/views/members/new.rhtml:1 app/views/members/new.rhtml:4
 #: app/views/sessions/new.rhtml:16
 msgid "Create new account"
@@ -357,6 +425,18 @@ msgstr "アカウント"
 msgid "Sign Out"
 msgstr "ログアウト"
 
+#: app/views/reader/index.rhtml:275
+msgid "Shortcut Keys"
+msgstr "ショートカットキー"
+
+#: app/views/reader/index.rhtml:280
+msgid "Others"
+msgstr "その他"
+
+#: app/views/reader/index.rhtml:297
+msgid "To use Fastladder, enable JavaScript by changing your browser options."
+msgstr "このサービスを利用するにはJavaScriptを有効にする必要があります。"
+
 #: app/views/reader/index.rhtml:309
 msgid "Reload"
 msgstr "更新"
@@ -368,6 +448,26 @@ msgstr "編集"
 #: app/views/reader/index.rhtml:313
 msgid "Add"
 msgstr "追加"
+
+#: app/views/reader/index.rhtml:376
+msgid "add feed"
+msgstr "フィードの追加"
+
+#: app/views/reader/index.rhtml:377
+msgid "import feed"
+msgstr "インポート"
+
+#: app/views/reader/index.rhtml:383
+msgid "next"
+msgstr "次へ"
+
+#: app/views/reader/index.rhtml:392
+msgid "file"
+msgstr "ファイルを選択"
+
+#: app/views/reader/index.rhtml:397
+msgid "Import from URL"
+msgstr "取得"
 
 #: app/views/sessions/new.rhtml:1
 msgid "Login"
