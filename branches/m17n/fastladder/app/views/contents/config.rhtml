@@ -5,48 +5,48 @@
  id="config_form"
  onreset="Form.fill(this, Config);return false">
 	<div class="tabs">
-		<div id="tab_config_basic" class="tab tab-active" rel="tab:config_form>config_basic">General</div>
-		<div id="tab_config_view" class="tab" rel="tab:config_form>config_view">Display</div>
-		<div class="tab" rel="tab:config_form>config_pin">Pin</div>
-		<div class="tab" rel="tab:config_form>config_share">Share</div>
-		<div class="tab" rel="tab:config_form>config_detail">Detail</div>
+    <div id="tab_config_basic" class="tab tab-active" rel="tab:config_form>config_basic"><%= _('General') %></div>
+    <div id="tab_config_view" class="tab" rel="tab:config_form>config_view"><%= _('Display') %></div>
+    <div class="tab" rel="tab:config_form>config_pin"><%= _('Pin') %></div>
+    <div class="tab" rel="tab:config_form>config_share"><%= _('Share') %></div>
+    <div class="tab" rel="tab:config_form>config_detail"><%= _('Detail') %></div>
 	</div>
 	<div id="config_container" style="clear:both"><center>
 		<div id="config_basic" style="display:none">
 		<table>
 			<tr>
-				<th><a href="/subscribe/">Subscribe to feed</a></th>
-				<td>Click 'Add' icon and enter the feed URL. </td>
+        <th><a href="/subscribe/"><%= _('Subscribe to feed') %></a></th>
+        <td><%= _("Click 'Add' icon and enter the feed URL.") %></td>
 			</tr>
 			<tr>
-				<th><a href="#manage" onclick="init_manage();return false">Manage subscription list</a></th>
-				<td>Click 'Edit' icon to manage 'My Feeds'.</td>
+        <th><a href="#manage" onclick="init_manage();return false"><%= _('Manage subscription list') %></a></th>
+        <td><%= _("Click 'Edit' icon to manage 'My Feeds'.") %></td>
 			</tr>
 			<tr class="last">
-				<th><a href="/utility/bookmarklet/">Browser buttons</a></th>
-				<td>Add new feeds to your subscription list with an easy-access browser button.</td>
+        <th><a href="/utility/bookmarklet/"><%= _('Browser buttons') %></a></th>
+        <td><%= _('Add new feeds to your subscription list with an easy-access browser button.') %></td>
 			</tr>
 		</table>
 		</div>
 		<div id="config_view" style="display:none">
 		<table>
 			<tr>
-				<th>Font size</th>
+        <th><%= _('Font size') %></th>
 				<td><input type="text" size="4" name="current_font"> px</td>
 			</tr>
 			<tr>
-				<th>Sort order</th>
+        <th><%= _('Sort order') %></th>
 				<td>
-				<input type="radio" name="reverse_mode" value="0">New articles first<br>
-				<input type="radio" name="reverse_mode" value="1">Old articles first
+          <input type="radio" name="reverse_mode" value="0"><%= _('New articles first') %><br>
+          <input type="radio" name="reverse_mode" value="1"><%= _('Old articles first') %>
 				</td>
 			</tr>
 			<tr>
-				<th>Number of 'My Feeds' to show</th>
+        <th><%= _("Number of 'My Feeds' to show") %></th>
 				<td>
-					<p>For shorter loading time, set the limit smaller. </p>
+          <p><%= _('For shorter loading time, set the limit smaller. ') %></p>
 					<input type="radio" name="use_limit_subs" value="1">Set limit to <input type="text" name="limit_subs" value="100" size="4"> feeds<br>
-					<input type="radio" name="use_limit_subs" value="0">Display all <br>
+          <input type="radio" name="use_limit_subs" value="0"><%= _('Display all') %> <br>
 				</td>
 			</tr>
 			<tr>
